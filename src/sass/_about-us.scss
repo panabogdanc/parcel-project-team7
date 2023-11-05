@@ -1,9 +1,9 @@
 css .about-us-section {
-    width: 100vw;
+    max-width: 375px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 40px 20px 0 20px;
+    padding: 40px 20px 40px 20px;
 }
 
 .about-us-text h2 {
@@ -39,7 +39,7 @@ css .about-us-section {
     object-fit: cover;
     width: 100%;
     height: 365px;
-    margin-top: 20px;
+    padding-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
