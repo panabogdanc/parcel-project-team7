@@ -1,18 +1,9 @@
-
-.about-us-section {
-    max-width: 375px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 40px 20px;
-
-.about-us-section {
+css .about-us-section {
   max-width: 375px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 40px 20px 40px 20px;
-
 }
 
 .about-us-text h2 {
@@ -92,44 +83,6 @@
 }
 
 @media screen and (min-width: 1158px) {
-
-
-
-    .about-us-section {
-        padding: 80px 132px;
-    }
-
-    .about-us-text {
-        max-width: 1200px;
-    }
-
-    .about-us-text h2 {
-        margin-right: 110px;
-
-    }
-
-    .about-us-text ul {
-        width: 859px;
-        height: 90px;
-        margin-left: 0;
-    }
-
-    .about-us-gif-container {
-        width: 1200px;
-        display: block;
-    }
-
-    .about-us-gif {
-        width: 892px;
-        height: 500px;
-        float: right;
-        margin: 0 auto;
-        padding-right: 30px;
-        padding-top: 0;
-    }
-
-}
-
   .about-us-section {
     padding: 80px 132px;
   }
@@ -160,4 +113,3 @@
     margin-left: auto;
   }
 }
-
