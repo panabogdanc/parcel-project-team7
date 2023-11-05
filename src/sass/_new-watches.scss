@@ -14,15 +14,17 @@ body {
 }
 
 section.watches {
-  padding-top: 80px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background: var(--standard-white);
+  padding-top: 80px;
   padding-right: 20px;
   padding-left: 20px;
-  width: 100%;
 }
 div.new-watches {
   display: flex;
@@ -81,14 +83,12 @@ div.new-watches {
 @media only screen and (min-width: 768px) {
   section.watches {
     padding-top: 80px;
-    margin: 0;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 768px;
     width: 100%;
     flex-direction: column;
   }
   .new-watches {
-    width: 704px;
+    width: 100%;
   }
   .new-watches h2 {
     width: 448px;
@@ -101,23 +101,25 @@ div.new-watches {
   }
   .new-watches ul {
     flex-direction: row-reverse;
-    justify-content: start;
+    justify-content: space-between;
     gap: 20px;
+  }
+
+  .new-watches li {
+    width: 354px;
+    height: 269px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1158px) {
   section.watches {
     padding-top: 80px;
-    margin: 0;
-    width: 100%;
-    padding-left: 132px;
-    padding-right: 132px;
+    margin: 0 auto;
+    max-width: 1158px;
     flex-direction: column;
   }
   .new-watches {
-    width: 1176px;
-    height: auto;
+    width: 100%;
   }
   .new-watches h2 {
     color: var(--standard-main-color);
@@ -131,8 +133,14 @@ div.new-watches {
     display: flex;
     gap: 24px;
   }
+
   .new-watches ul li {
     flex-grow: 1;
     height: auto;
+  }
+
+  .new-watches li {
+    width: 547px;
+    height: 401px;
   }
 }
