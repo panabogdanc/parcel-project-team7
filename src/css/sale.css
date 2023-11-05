@@ -191,7 +191,8 @@
         line-height: 40px;
         color: var(--standard-main-color);
         padding-top: 128px;
-        padding-left: 20px;
+        padding-left: 30px;
+        margin: 0;
 
     }
 
@@ -312,6 +313,7 @@
         width: 100%;
         max-width: 1158px;
         margin: auto;
+        padding-bottom: 160px;
     }
 
     .sale-container {
@@ -347,6 +349,31 @@
         height: 614px;
     }
 
+    /* web sale main photo effect */
+    .sale-main-photo img {
+        transition: 0.3s ease;
+    }
+
+    .sale-main-photo img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+
+    /* web sale main photo effect */
+    .column-img img {
+        transition: 0.3s ease;
+    }
+
+    .column-img img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+
+    /* */
     .sale-gallery {
         display: flex;
         justify-content: center;
@@ -361,7 +388,8 @@
         line-height: 40px;
         color: var(--standard-main-color);
         padding-top: 128px;
-        padding-left: 0;
+        padding-left: 0px;
+        margin: 0;
 
     }
 
@@ -466,8 +494,8 @@
         font-size: 14px;
         line-height: 18px;
         color: var(--standard-secondary-text-color);
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     }
 
     .sale-watch-details {
