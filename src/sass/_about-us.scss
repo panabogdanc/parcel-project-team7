@@ -1,9 +1,9 @@
-css .about-us-section {
+.about-us-section {
     max-width: 375px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px;
 }
 
 .about-us-text h2 {
@@ -109,14 +109,16 @@ css .about-us-section {
 
     .about-us-gif-container {
         width: 1200px;
-        margin-top: 40px;
         display: block;
     }
 
     .about-us-gif {
         width: 892px;
+        height: 500px;
         float: right;
-        margin-left: auto;
+        margin: 0 auto;
+        padding-right: 30px;
+        padding-top: 0;
     }
 
 }
