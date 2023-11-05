@@ -68,6 +68,7 @@
         display: flex;
         gap: 8px;
         padding-top: 16px;
+
     }
 
     .actual-price {
@@ -97,6 +98,7 @@
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding-top: 22.5px;
+        padding-bottom: 40px;
     }
 
     .sale-watch-description h4 {
@@ -105,7 +107,6 @@
         line-height: 24px;
         text-transform: uppercase;
         margin: 0 auto;
-        padding-top: 48px;
         padding-bottom: 18px;
         color: var(--standard-main-color);
     }
@@ -117,6 +118,7 @@
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding: 0;
+        padding-bottom: 40px;
     }
 
     .sale-watch-details h4 {
@@ -125,7 +127,6 @@
         line-height: 24px;
         text-transform: uppercase;
         margin: 0;
-        padding-top: 48px;
         padding-bottom: 18px;
         color: var(--standard-main-color);
     }
@@ -314,6 +315,8 @@
         max-width: 1158px;
         margin: auto;
         padding-bottom: 160px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .sale-container {
