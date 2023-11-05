@@ -1,6 +1,6 @@
 /* Mobile version  */
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .sales-section {
         width: 100%;
         max-width: 375px;
@@ -146,16 +146,11 @@
 
 /* Tablet Version  */
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .sales-section {
         width: 100%;
-        max-width: 1280px;
-        margin: 0 32px;
-        padding-left: 66x;
-        padding-right: 66px;
-        display: block;
-        align-content: center;
-        position: absolute;
+        max-width: 768px;
+        margin: auto;
     }
 
     .gallery-sale {
@@ -169,7 +164,7 @@
         flex-direction: column;
         width: 100%;
         gap: 10px;
-        padding-left: 66px;
+
     }
 
     .column-img img {
@@ -184,9 +179,10 @@
 
     .sale-gallery {
         display: flex;
+        justify-content: center;
         gap: 20px;
-        padding-top: 40px;
-        padding-right: 66px;
+        margin: 0 auto;
+
     }
 
     .sale-title {
@@ -195,7 +191,16 @@
         line-height: 40px;
         color: var(--standard-main-color);
         padding-top: 128px;
+        padding-left: 20px;
 
+    }
+
+    .sale-details-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 32px;
+        padding-left: 66px;
+        padding-right: 66px;
     }
 
     .sale-watch-name h3 {
@@ -205,7 +210,6 @@
         margin: 0 auto;
         padding-top: 40px;
         color: var(--standard-main-color);
-        padding-left: 66px;
     }
 
     .sale-watch-name p {
@@ -215,16 +219,11 @@
         color: var(--standard-secondary-text-color);
         margin: 0 auto;
         padding-top: 8px;
-        padding-left: 66px;
     }
 
     .sale-watch-price {
         display: inline-flex;
-        justify-content: center;
-        align-content: center;
-        padding-left: 66px;
         gap: 8px;
-        padding-top: 16px;
     }
 
     .actual-price {
@@ -251,10 +250,11 @@
     .sale-watch-price p {
         font-weight: 400;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 14px;
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding-top: 22.5px;
+        padding-bottom: 40px;
 
     }
 
@@ -264,10 +264,9 @@
         line-height: 24px;
         text-transform: uppercase;
         margin: 0;
-        padding-top: 48px;
+
         padding-bottom: 18px;
         color: var(--standard-main-color);
-        padding-left: 66px;
     }
 
     .sale-watch-description p {
@@ -277,8 +276,8 @@
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding: 0;
-        padding-left: 66px;
-        padding-right: 66px;
+        padding-bottom: 40px;
+
     }
 
     .sale-watch-details h4 {
@@ -287,10 +286,8 @@
         line-height: 24px;
         text-transform: uppercase;
         margin: 0 auto;
-        padding-top: 48px;
         padding-bottom: 18px;
         color: var(--standard-main-color);
-        padding-left: 66px;
     }
 
     .sale-watch-details p {
@@ -300,7 +297,6 @@
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding: 0;
-        padding-left: 66px;
     }
 
     .sale-watch-details {
@@ -311,33 +307,38 @@
 
 /* Web Version */
 
-@media only screen and (min-width: 1280px) {
+@media screen and (min-width: 1158px) {
     .sales-section {
         width: 100%;
+        max-width: 1158px;
         margin: auto;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .sale-container {
         display: flex;
         flex-direction: row;
-        max-height: 614px;
-        padding-right: 20px;
+        gap: 40px;
+        max-width: 1176px;
+        position: relative;
+    }
+
+    .gallery-sale {
+        display: flex;
         align-content: center;
+        gap: 20px;
     }
 
     .column-img {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 100%;
-        align-content: center;
         gap: 10px;
+        padding-left: 97px;
+
     }
 
     .column-img img {
-        width: 146x;
+        width: 146px;
         height: 146px;
     }
 
@@ -348,8 +349,10 @@
 
     .sale-gallery {
         display: flex;
+        justify-content: center;
         gap: 20px;
-        padding-top: 40px;
+        margin: 0 auto;
+
     }
 
     .sale-title {
@@ -357,16 +360,26 @@
         font-size: 32px;
         line-height: 40px;
         color: var(--standard-main-color);
-        padding-top: 80px;
+        padding-top: 128px;
+        padding-left: 0;
+
+    }
+
+    .sale-details-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+
     }
 
     .sale-watch-name h3 {
         font-weight: 400;
         font-size: 24px;
         line-height: 24px;
-        margin: 0;
-        padding-top: 40px;
-        padding-left: 0;
+        margin: 0 auto;
+        padding-top: 0;
         color: var(--standard-main-color);
     }
 
@@ -381,16 +394,13 @@
 
     .sale-watch-price {
         display: inline-flex;
-        justify-content: center;
-        align-content: center;
         gap: 8px;
-        padding-left: 66px;
-        padding-top: 16px;
     }
 
     .actual-price {
-        margin-left: 0px;
-        margin-right: 8px;
+        margin-left: 0;
+        margin-right: 0;
+
     }
 
     .old-price {
@@ -403,7 +413,7 @@
         font-size: 18px;
         line-height: 24px;
         text-transform: uppercase;
-        margin: 0 auto;
+        margin: 0;
         padding-top: 16px;
         color: var(--standard-main-color);
     }
@@ -411,10 +421,12 @@
     .sale-watch-price p {
         font-weight: 400;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 14px;
         color: var(--standard-secondary-text-color);
-        margin: 0 auto;
+        margin: 0;
         padding-top: 22.5px;
+        padding-bottom: 40px;
+
     }
 
     .sale-watch-description h4 {
@@ -422,8 +434,8 @@
         font-size: 18px;
         line-height: 24px;
         text-transform: uppercase;
-        margin: 0 auto;
-        padding-top: 48px;
+        margin: 0;
+
         padding-bottom: 18px;
         color: var(--standard-main-color);
     }
@@ -435,6 +447,8 @@
         color: var(--standard-secondary-text-color);
         margin: 0;
         padding: 0;
+        padding-bottom: 40px;
+
     }
 
     .sale-watch-details h4 {
@@ -443,7 +457,6 @@
         line-height: 24px;
         text-transform: uppercase;
         margin: 0 auto;
-        padding-top: 48px;
         padding-bottom: 18px;
         color: var(--standard-main-color);
     }
