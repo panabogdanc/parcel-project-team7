@@ -1,7 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --standard-main-color: rgba(20, 20, 20, 1);
+  --standard-green: rgba(30, 40, 39, 1);
+  --standard-white: rgba(255, 255, 255, 1);
+  --standard-secondary-text-color: rgba(20, 20, 20, 0.5);
+}
+
 .container {
   max-width: 335px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.cards-container {
+  overflow: hidden; 
 }
 
 .catalog-container {
@@ -16,7 +31,7 @@
 }
 
 .catalog-container h2 {
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
@@ -29,8 +44,13 @@
   flex-direction: column;
 }
 
+.items-catalog {
+  position: relative;
+  transition: transform 2s ease-in-out;
+}
+
 .watch-style p {
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -40,13 +60,90 @@
 }
 
 .watch-style span {
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--standard-secondary-text-color);
+}
+
+.price-style p {
+  overflow: hidden;
+  color: var(--standard-main-color);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'Epilogue';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.28px;
+}
+
+.price-style span {
+  color: var(--standard-secondary-text-color);
+  font-family: 'Epilogue';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: -0.24px;
+}
+
+.price-style {
+  padding-top: 14px;
+}
+
+/* BACK FLIP CARDS */
+
+.flip-card {
+  overflow: hidden; 
+  position: relative;
+  background-color: var(--standard-green);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+}
+
+.items-catalog:hover .flip-card {
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+} 
+
+
+.details-flip-card {
+  padding: 0;
+}
+
+.flip-card h4 {
+  color: #fff;
+  padding-left: 20px;
+}
+
+.flip-card p {
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 20px;
+}
+
+.details-flip-card li {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Epilogue';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.14px;
+  padding-left: 20px;
+}
+
+.details-flip-card ul {
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .button-container {
@@ -56,7 +153,7 @@
 }
 
 .button-style {
-  font-family: Epilogue;
+  font-family:'Epilogue';
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -78,19 +175,10 @@
 
   .watch-style-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
   }
-
-  .watch-style {
-    width: 336px;
-    gap: 14px;
-  }
-
-  .watch-style p {
-    text-overflow: ellipsis;
-  }
-  
 }
 
 /* DESKTOP */
@@ -99,14 +187,28 @@
   .catalog-container {
     max-width: 1136px;
   }
-
-  .watch-style {
-    width: 276px;
-    gap: 14px;
+  .watch-style-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
 
-  .button-style p {
-    text-overflow: ellipsis;
+  .cards-container {
+    width: 250px;
   }
-  
+
+.flip-card h4 {
+  color: #fff;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.details-flip-card ul {
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
 }
