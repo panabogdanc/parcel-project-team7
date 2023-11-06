@@ -18,6 +18,13 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
+  const menuLinks = document.querySelectorAll('.js-menu-link');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu(); // Închide meniul după ce se face clic pe un link cu ancoră
+    });
+  });
+
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
