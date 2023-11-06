@@ -16,7 +16,7 @@
 }
 
 .cards-container {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .catalog-container {
@@ -102,7 +102,7 @@
 /* BACK FLIP CARDS */
 
 .flip-card {
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
   background-color: var(--standard-green);
   position: absolute;
@@ -114,9 +114,7 @@
 .items-catalog:hover .flip-card {
   transform: translateX(0);
   transition: transform 250ms ease-in-out;
-} 
-
-
+}
 .details-flip-card {
   padding: 0;
 }
@@ -156,7 +154,7 @@
 }
 
 .button-style {
-  font-family:'Epilogue';
+  font-family: 'Epilogue';
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -202,17 +200,16 @@
     width: 250px;
   }
 
-.flip-card h4 {
-  color: #fff;
-  padding-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+  .flip-card h4 {
+    color: #fff;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
 
-.details-flip-card ul {
-  padding: 0;
-  padding-bottom: 20px;
-  padding-top: 5px;
-}
-
+  .details-flip-card ul {
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
 }
