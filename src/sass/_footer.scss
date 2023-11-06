@@ -257,13 +257,24 @@
 
   .footer-wrap {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .footer-terms {
     display: flex;
     align-items: baseline;
-    gap: 200px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-address-item a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .footer-nav li a {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .subscribe {
