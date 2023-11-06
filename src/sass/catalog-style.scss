@@ -27,6 +27,8 @@
 .watch-style {
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .watch-style p {
@@ -37,6 +39,7 @@
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--standard-green);
+  margin-bottom: 0;
 }
 
 .watch-style span {
@@ -47,12 +50,31 @@
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--standard-secondary-text-color);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.watch-style picture {
+  display: flex;
+  justify-content: center;
+  height: 352px;
+}
+
+.watch-style picture img {
+  width: 335px;
 }
 
 .button-container {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.watch-style:hover .overcard {
+  transform: translateX(0);
 }
 
 .button-style {
@@ -69,17 +91,34 @@
   border: none;
 }
 
+.overcard {
+  background-color: var(--standard-green);
+  border-radius: 8px;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 40;
+  word-wrap: break-word;
+  position: absolute;
+  top: 0;
+  transform: translateX(110%);
+  transition: transform 250ms ease-in-out;
+}
+
+.overcard p {
+  color: #fff;
+}
+
 /* TABLETA */
 
 @media screen and (min-width: 768px) {
   .catalog-container {
-    max-width: 704px;
+    max-width: 728px;
   }
 
   .watch-style-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    justify-content: space-between;
   }
 
   .watch-style {
@@ -90,14 +129,17 @@
   .watch-style p {
     text-overflow: ellipsis;
   }
-  
+
+  .button-container {
+    max-width: 768px;
+  }
 }
 
 /* DESKTOP */
 
 @media screen and (min-width: 1158px) {
   .catalog-container {
-    max-width: 1136px;
+    max-width: 1118px;
   }
 
   .watch-style {
@@ -107,6 +149,32 @@
 
   .button-style p {
     text-overflow: ellipsis;
+    padding-top: 30px;
   }
-  
+
+  .button-container {
+    max-width: 1158px;
+  }
+
+  .watch-style picture {
+    height: 276px;
+  }
+
+  .watch-style picture img {
+    width: 335px;
+  }
+
+  .overcard {
+    width: 276px;
+    height: 296px;
+  }
+
+  .overcard {
+    white-space: nowrap;
+    padding-top: 0;
+  }
+
+  .watch-style span {
+    padding-bottom: 20px;
+  }
 }
