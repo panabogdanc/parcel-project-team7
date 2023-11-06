@@ -1,3 +1,5 @@
+ 
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@
   --standard-secondary-text-color: rgba(20, 20, 20, 0.5);
 }
 
+ 
 .container {
   max-width: 335px;
   margin-left: auto;
@@ -34,7 +37,11 @@
 }
 
 .catalog-container h2 {
+Catalog-Florin
+  font-family: "Epilogue";
+
   font-family: 'Epilogue';
+
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
@@ -49,6 +56,16 @@
 
 .items-catalog {
   position: relative;
+ Catalog-Florin
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  background-color: var(--standard-white);
+}
+
+.watch-style p {
+  font-family: "Epilogue";
+
   transition: transform 2s ease-in-out;
 }
 
@@ -62,8 +79,16 @@
   color: var(--standard-green);
 }
 
+.items-catalog img {
+  width: 300px;
+}
+
+.watch-style span {
+  font-family: "Epilogue";
+
 .watch-style span {
   font-family: 'Epilogue';
+
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -77,7 +102,11 @@
   color: var(--standard-main-color);
   text-overflow: ellipsis;
   white-space: nowrap;
+ Catalog-Florin
+  font-family: "Epilogue";
+
   font-family: 'Epilogue';
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -87,7 +116,11 @@
 
 .price-style span {
   color: var(--standard-secondary-text-color);
+
+  font-family: "Epilogue";
+
   font-family: 'Epilogue';
+
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -109,12 +142,15 @@
   top: 0;
   left: 0;
   transform: translateX(100%);
+ Catalog-Florin
+  border-radius: 8px;
 }
 
 .items-catalog:hover .flip-card {
   transform: translateX(0);
   transition: transform 250ms ease-in-out;
 }
+
 .details-flip-card {
   padding: 0;
 }
@@ -133,7 +169,10 @@
   list-style-type: none;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+  font-family: "Epilogue";
+
   font-family: 'Epilogue';
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -151,10 +190,20 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+ 
+  width: 100%;
+  padding: 20px;
+  padding-right: 20px;
+}
+
+.button-style {
+  font-family: "Epilogue";
+
 }
 
 .button-style {
   font-family: 'Epilogue';
+
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -171,7 +220,11 @@
 
 @media screen and (min-width: 768px) {
   .catalog-container {
+ 
+    max-width: 728px;
+
     max-width: 704px;
+
   }
 
   .watch-style-container {
@@ -181,13 +234,25 @@
     flex-wrap: wrap;
     gap: 32px;
   }
+ 
+
+  .items-catalog img {
+    width: 310px;
+}
+
+
+
 }
 
 /* DESKTOP */
 
 @media screen and (min-width: 1158px) {
   .catalog-container {
+ 
+    max-width: 1118px;
+
     max-width: 1136px;
+
   }
   .watch-style-container {
     display: flex;
@@ -211,5 +276,12 @@
     padding: 0;
     padding-bottom: 20px;
     padding-top: 5px;
+  }
+ 
+
+  .button-container {
+    width: 100%;
+    padding: 20px;
+    padding-right: 80px;
   }
 }

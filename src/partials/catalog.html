@@ -1,4 +1,4 @@
-<section class="catalog-section">
+<section class="catalog-section" id="catalog">
   <div class="catalog-container container">
     <h2>Catalog</h2>
     <ul class="watch-style-container">
@@ -6,7 +6,7 @@
         <div class="cards-container">
           <div class="watch-style">
             <div class="items-catalog">
-              <picture class="test">
+              <picture>
                 <!-- Desktop -->
 
                 <source
@@ -30,7 +30,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-1st-1x-p.png 1x,
                     ./images/img-1st-2x-p.png 2x
@@ -100,7 +100,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-2nd-1x-p.png 1x,
                     ./images/img-2nd-2x-p.png 2x
@@ -170,7 +170,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-3rd-1x-p.png 1x,
                     ./images/img-3rd-2x-p.png 2x
@@ -240,7 +240,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-4th-1x-p.png 1x,
                     ./images/img-4th-2x-p.png 2x
@@ -310,7 +310,11 @@
                 <!-- Mobile -->
 
                 <source
+
+                  media="(max-width: 768px)"
+
                   media="(min-width: 428px)"
+
                   srcset="./images/img-5th-1x-p.png x1, ./images/img-5th-2x-p.png 2x"
                 />
 
@@ -377,7 +381,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-6th-1x-p.png 1x,
                     ./images/img-6th-2x-p.png 2x
@@ -447,7 +451,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-7th-1x-p.png 1x,
                     ./images/img-7th-2x-p.png 2x
@@ -517,7 +521,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-8th-1x-p.png 1x,
                     ./images/img-8th-2x-p.png 2x
@@ -587,7 +591,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-9th-1x-d.png 1x,
                     ./images/img-9th-2x-d.png 2x
@@ -656,7 +660,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-10th-1x-d.png 1x,
                     ./images/img-10th-2x-d.png 2x
@@ -725,7 +729,7 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-11th-1x-d.png 1x,
                     ./images/img-11th-2x-d.png 2x
@@ -791,13 +795,20 @@
                 <!-- Mobile -->
 
                 <source
-                  media="(min-width: 428px)"
+                  media="(max-width: 768px)"
                   srcset="
                     ./images/img-12th-1x-d.png 1x,
                     ./images/img-12th-2x-d.png 2x
                   "
                 />
+
+                <img
+                  src="./images/img-12th-1x-d.png"
+                  alt="Armani Exchange"
+                />
+
                 <img src="./images/img-12th-1x-d.png" alt="Armani Exchange" />
+
               </picture>
               <div class="flip-card">
                 <div class="description-flip-card">
@@ -831,7 +842,7 @@
       </li>
     </ul>
   </div>
-  <div class="button-container">
+  <div data-modal-open class="button-container">
     <button class="button-style" type="button">BUY NOW</button>
   </div>
 </section>
