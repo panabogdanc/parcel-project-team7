@@ -2,27 +2,22 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://panabogdanc.github.io/parcel-project-team7",
+  "homepage": "https://panabogdanc.github.io/parcel-project-team7/",
   "scripts": {
-    "scripts": {
-      "start": "parcel index.html",
-      "build": "parcel build index.html",
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
-    },
-    "build": "parcel build src/*.html --public-url /parcel-project-template/",
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /parcel-project-team7/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-team7/.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/goitacademy/parcel-project-team7/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
